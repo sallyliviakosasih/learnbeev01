@@ -21,6 +21,7 @@ module.exports = {
       'contrast': '#5D3737',
       'warning-red': '#FF4646',
       'black': 'black',
+      'white': 'white',
       'transparent': 'transparent'
     }
   },

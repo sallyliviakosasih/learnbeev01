@@ -36,42 +36,55 @@ export default function RootLayout({ children }) {
           </div>
         </header>
         <main>
-        <main>
-      <div className='grid grid-cols-5'>
-        <div className='col-span-1 mx-10'>
-          <h1>Feed</h1>
-          <nav>
-            <a href='#' className='flex'>
-              <Image
-                  src={'/icon/homeIcon.svg'}
-                  alt='Ikon Halaman Utama'
-                  width={18}
-                  height={20}
-              />
-              <h2>Halaman Utama</h2>
-            </a>
-            <a href='#' className='flex'>
-              <Image
-                src={'/icon/latestIcon.svg'}
-                alt='Ikon Terbaru'
-                width={18}
-                height={18}
-              />
-              <h2>Terbaru</h2>
-            </a>
-            <a href='#' className='flex'> 
-              <h2>logo</h2>
-              <h2>Trending</h2>
-            </a>
-          </nav>
-            <h1>Lainnya</h1>
-            <h2>Profile</h2>
-        </div>
-        <div className=''>{children}</div>
-      </div>
-    </main>
-        </main>
-      </body>
+          <div className='grid grid-cols-5'>
+            <div className='col-span-1 ml-10'>
+              <h1>Feed</h1>
+              <nav>
+                <a href='#' className='flex bg-primary-yellow rounded-lg px-3 py-2 my-2'>
+                  <Image
+                    src={'/icon/homeIcon.svg'}
+                    alt='Ikon Halaman Utama'
+                    width={18}
+                    height={20}
+                  />
+                  <h2 className='px-2'>Halaman Utama</h2>
+                </a>
+                <a href='#' className='flex px-3 py-2 my-2'>
+                  <Image
+                    src={'/icon/latestIcon.svg'}
+                    alt='Ikon Terbaru'
+                    width={18}
+                    height={18}
+                  />
+                  <h2 className='px-2'>Terbaru</h2>
+                </a>
+                <a href='#' className='flex px-3 py-2 my-2'> 
+                  <Image
+                    src={'/icon/trendingIcon.svg'}
+                    alt='Ikon Trending'
+                    width={18}
+                    height={18}
+                  />
+                  <h2 className='px-2'>Trending</h2>
+                </a>
+              </nav>
+                <h1 className='border-t-2 border-mid-muted'>Lainnya</h1>
+                <nav>
+                  <a href='#' className='flex px-3 py-2 my-2'>
+                    <Image
+                      src={'/icon/profileInfoIcon.svg'}
+                      alt='Ikon Informasi Akun'
+                      width={18}
+                      height={18}
+                    />
+                    <h2 className='px-2'>Profile</h2>
+                  </a>
+                </nav>
+            </div>
+            <div className='px-5 col-span-3'>{children}</div>
+          </div>
+      </main>
+    </body>
     </html>
   )
 }
