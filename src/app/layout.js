@@ -29,12 +29,12 @@ export default function RootLayout({ children }) {
                 />
               </button>
             </div>
-            <div className='w-1/5 items-center hidden' id='notLogged'>
+            <div className='w-3/12 items-center flex justify-center' id='notLogged'>
               <a href='#' className='bg-primary-yellow text-contrast rounded-full font-medium px-4 py-2 mx-5'>Masuk</a>
               <a href='#' className='border-2 rounded-full font-medium border-contrast px-4 py-2 mx-5'>Daftar</a>
             </div>
             
-            <div className='w-2/6 flex justify-center items-center gap-4' id='logged'>
+            <div className='w-3/12 hidden justify-center items-center gap-4' id='logged'>
               <a href='#' className='bg-primary-yellow text-contrast rounded-full font-medium px-4 py-2'>+ Ajukan pertanyaan</a>
               <a href='#' className=''>
                 <Image
