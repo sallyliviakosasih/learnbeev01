@@ -22,6 +22,7 @@ module.exports = {
       'warning-red': '#FF4646',
       'black': 'black',
       'white': 'white',
+      'grey': '#ECEEF7',
       'transparent': 'transparent'
     }
   },
