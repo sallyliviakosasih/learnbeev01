@@ -10,6 +10,62 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <div className='fixed hidden top-0 left-0 right-0 h-full z-10 bg-dark-muted/50 items-center justify-center' id='loginPopUpBg' tabIndex={-1}>
+          <div className='bg-white relative rounded-lg p-12 w-4/12' id='loginFormContianer'>
+            <Image className='mx-auto'
+              src={'/logo/beeOnly.svg'}
+              alt='Logo Learn Bee'
+              width={67}
+              height={68}
+            />
+            <Image className='mx-auto my-2'
+              src={'/logo/textOnly.svg'}
+              alt='Logo 2 Learn Bee'
+              width={139}
+              height={23}
+            />
+            <h2 className='text-center font-serif font-medium text-contrast text-3xl my-4'>Masuk</h2>
+            <form className='my-5'>
+              <label className='block my-2'>Email USU Mahasiswa</label>
+              <input type='text' className='w-full border-b-2'></input>
+              <label className='block my-2'>Kata Sandi</label>
+              <input type='text' className='w-full border-b-2'></input>
+            </form>
+            <button className='bg-primary-yellow text-contrast px-4 py-2 rounded-full block mx-auto my-16'>Masuk</button>
+          </div>
+        </div>
+
+        <div className='fixed hidden top-0 left-0 right-0 h-full z-10 bg-dark-muted/50 items-center justify-center' id='signupPopUpBg' tabIndex={-1}>
+          <div className='bg-white relative rounded-lg p-12 w-4/12' id='loginFormContianer'>
+            <Image className='mx-auto'
+              src={'/logo/beeOnly.svg'}
+              alt='Logo Learn Bee'
+              width={67}
+              height={68}
+            />
+            <Image className='mx-auto my-2'
+              src={'/logo/textOnly.svg'}
+              alt='Logo 2 Learn Bee'
+              width={139}
+              height={23}
+            />
+            <h2 className='text-center font-serif font-medium text-contrast text-3xl my-4'>Daftar</h2>
+            <form className='my-5'>
+              <label className='block my-2'>Nama Lengkap</label>
+              <input type='text' className='w-full border-b-2'></input>
+              <label className='block my-2'>Nomor Induk Mahasiswa</label>
+              <input type='text' className='w-full border-b-2'></input>
+              <label className='block my-2'>Email USU Mahasiswa</label>
+              <input type='text' className='w-full border-b-2'></input>
+              <label className='block my-2'>Kata Sandi</label>
+              <input type='text' className='w-full border-b-2'></input>
+              <label className='block my-2'>Konfirmasi Kata Sandi</label>
+              <input type='text' className='w-full border-b-2'></input>
+            </form>
+            <button className='bg-primary-yellow text-contrast px-4 py-2 rounded-full block mx-auto my-16'>Daftar</button>
+          </div>
+        </div>
+
         <header>
           <div className='flex px-9 py-5' id='navigationContainer'>
             <Image className='flex-none'
@@ -33,7 +89,6 @@ export default function RootLayout({ children }) {
               <a href='#' className='bg-primary-yellow text-contrast rounded-full font-medium px-4 py-2 mx-5'>Masuk</a>
               <a href='#' className='border-2 rounded-full font-medium border-contrast px-4 py-2 mx-5'>Daftar</a>
             </div>
-            
             <div className='w-3/12 hidden justify-center items-center gap-4' id='logged'>
               <a href='#' className='bg-primary-yellow text-contrast rounded-full font-medium px-4 py-2'>+ Ajukan pertanyaan</a>
               <a href='#' className=''>
