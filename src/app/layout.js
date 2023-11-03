@@ -29,9 +29,29 @@ export default function RootLayout({ children }) {
                 />
               </button>
             </div>
-            <div className='flex w-1/5 items-center'>
+            <div className='w-1/5 items-center hidden' id='notLogged'>
               <a href='#' className='bg-primary-yellow text-contrast rounded-full font-medium px-4 py-2 mx-5'>Masuk</a>
               <a href='#' className='border-2 rounded-full font-medium border-contrast px-4 py-2 mx-5'>Daftar</a>
+            </div>
+            
+            <div className='w-2/6 flex justify-center items-center gap-4' id='logged'>
+              <a href='#' className='bg-primary-yellow text-contrast rounded-full font-medium px-4 py-2'>+ Ajukan pertanyaan</a>
+              <a href='#' className=''>
+                <Image
+                  src={'icon/notificationIcon.svg'}
+                  alt='Ikon Notifikasi'
+                  width={31}
+                  height={31}
+                />
+              </a>
+              <a href='#'>
+                <Image className='rounded-full'
+                  src={'/sample/sampleUser.png'}
+                  alt='Gambar Profile'
+                  width={45}
+                  height={80}
+                />
+              </a>
             </div>
           </div>
         </header>
